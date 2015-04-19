@@ -63,7 +63,7 @@ const struct FLLocationRelationships FLLocationRelationships = {
 }
 
 - (void)setLatitudeValue:(double)value_ {
-	[self setLatitude:[NSNumber numberWithDouble:value_]];
+	[self setLatitude:@(value_)];
 }
 
 - (double)primitiveLatitudeValue {
@@ -72,7 +72,7 @@ const struct FLLocationRelationships FLLocationRelationships = {
 }
 
 - (void)setPrimitiveLatitudeValue:(double)value_ {
-	[self setPrimitiveLatitude:[NSNumber numberWithDouble:value_]];
+	[self setPrimitiveLatitude:@(value_)];
 }
 
 @dynamic longitude;
@@ -83,7 +83,7 @@ const struct FLLocationRelationships FLLocationRelationships = {
 }
 
 - (void)setLongitudeValue:(double)value_ {
-	[self setLongitude:[NSNumber numberWithDouble:value_]];
+	[self setLongitude:@(value_)];
 }
 
 - (double)primitiveLongitudeValue {
@@ -92,7 +92,7 @@ const struct FLLocationRelationships FLLocationRelationships = {
 }
 
 - (void)setPrimitiveLongitudeValue:(double)value_ {
-	[self setPrimitiveLongitude:[NSNumber numberWithDouble:value_]];
+	[self setPrimitiveLongitude:@(value_)];
 }
 
 @dynamic annotation;

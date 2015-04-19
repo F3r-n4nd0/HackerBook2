@@ -62,7 +62,7 @@ const struct FLBookRelationships FLBookRelationships = {
 }
 
 - (void)setIsFavoriteValue:(BOOL)value_ {
-	[self setIsFavorite:[NSNumber numberWithBool:value_]];
+	[self setIsFavorite:@(value_)];
 }
 
 - (BOOL)primitiveIsFavoriteValue {
@@ -71,7 +71,7 @@ const struct FLBookRelationships FLBookRelationships = {
 }
 
 - (void)setPrimitiveIsFavoriteValue:(BOOL)value_ {
-	[self setPrimitiveIsFavorite:[NSNumber numberWithBool:value_]];
+	[self setPrimitiveIsFavorite:@(value_)];
 }
 
 @dynamic pdfURL;

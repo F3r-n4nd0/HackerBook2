@@ -13,6 +13,29 @@
 		ED12B7671AE3FE72002F536F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED12B7651AE3FE72002F536F /* LaunchScreen.xib */; };
 		ED12B7731AE3FE72002F536F /* HackerBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B7721AE3FE72002F536F /* HackerBooksTests.m */; };
 		ED12B77F1AE4025D002F536F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED12B77D1AE4025D002F536F /* Model.xcdatamodeld */; };
+		ED12B7821AE41D20002F536F /* FLHackerBookBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B7811AE41D20002F536F /* FLHackerBookBaseClass.m */; };
+		ED12B8091AE42CC4002F536F /* _FLAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B7F81AE42CC4002F536F /* _FLAnnotation.m */; };
+		ED12B80A1AE42CC4002F536F /* _FLAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B7FA1AE42CC4002F536F /* _FLAuthor.m */; };
+		ED12B80B1AE42CC4002F536F /* _FLBook.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B7FC1AE42CC4002F536F /* _FLBook.m */; };
+		ED12B80C1AE42CC4002F536F /* _FLBookDetailAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B7FE1AE42CC4002F536F /* _FLBookDetailAuthor.m */; };
+		ED12B80D1AE42CC4002F536F /* _FLBookDetailTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8001AE42CC4002F536F /* _FLBookDetailTag.m */; };
+		ED12B80E1AE42CC4002F536F /* _FLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8021AE42CC4002F536F /* _FLLocation.m */; };
+		ED12B80F1AE42CC4002F536F /* _FLPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8041AE42CC4002F536F /* _FLPdf.m */; };
+		ED12B8101AE42CC4002F536F /* _FLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8061AE42CC4002F536F /* _FLPhoto.m */; };
+		ED12B8111AE42CC4002F536F /* _FLTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8081AE42CC4002F536F /* _FLTag.m */; };
+		ED12B8241AE42CD2002F536F /* FLAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8131AE42CD2002F536F /* FLAnnotation.m */; };
+		ED12B8251AE42CD2002F536F /* FLAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8151AE42CD2002F536F /* FLAuthor.m */; };
+		ED12B8261AE42CD2002F536F /* FLBook.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8171AE42CD2002F536F /* FLBook.m */; };
+		ED12B8271AE42CD2002F536F /* FLBookDetailAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8191AE42CD2002F536F /* FLBookDetailAuthor.m */; };
+		ED12B8281AE42CD2002F536F /* FLBookDetailTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B81B1AE42CD2002F536F /* FLBookDetailTag.m */; };
+		ED12B8291AE42CD2002F536F /* FLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B81D1AE42CD2002F536F /* FLLocation.m */; };
+		ED12B82A1AE42CD2002F536F /* FLPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B81F1AE42CD2002F536F /* FLPdf.m */; };
+		ED12B82B1AE42CD2002F536F /* FLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8211AE42CD2002F536F /* FLPhoto.m */; };
+		ED12B82C1AE42CD2002F536F /* FLTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8231AE42CD2002F536F /* FLTag.m */; };
+		ED12B8421AE42FB7002F536F /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B83B1AE42FB7002F536F /* AGTCoreDataCollectionViewController.m */; };
+		ED12B8431AE42FB7002F536F /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B83D1AE42FB7002F536F /* AGTCoreDataStack.m */; };
+		ED12B8441AE42FB7002F536F /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B83F1AE42FB7002F536F /* AGTCoreDataTableViewController.m */; };
+		ED12B8451AE42FB7002F536F /* AGTEntityObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12B8411AE42FB7002F536F /* AGTEntityObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +60,53 @@
 		ED12B7711AE3FE72002F536F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED12B7721AE3FE72002F536F /* HackerBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooksTests.m; sourceTree = "<group>"; };
 		ED12B77E1AE4025D002F536F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		ED12B7801AE41D20002F536F /* FLHackerBookBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLHackerBookBaseClass.h; path = Models/FLHackerBookBaseClass.h; sourceTree = "<group>"; };
+		ED12B7811AE41D20002F536F /* FLHackerBookBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLHackerBookBaseClass.m; path = Models/FLHackerBookBaseClass.m; sourceTree = "<group>"; };
+		ED12B7F61AE4245F002F536F /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		ED12B7F71AE42CC4002F536F /* _FLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLAnnotation.h; path = Models/_FLAnnotation.h; sourceTree = "<group>"; };
+		ED12B7F81AE42CC4002F536F /* _FLAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLAnnotation.m; path = Models/_FLAnnotation.m; sourceTree = "<group>"; };
+		ED12B7F91AE42CC4002F536F /* _FLAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLAuthor.h; path = Models/_FLAuthor.h; sourceTree = "<group>"; };
+		ED12B7FA1AE42CC4002F536F /* _FLAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLAuthor.m; path = Models/_FLAuthor.m; sourceTree = "<group>"; };
+		ED12B7FB1AE42CC4002F536F /* _FLBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLBook.h; path = Models/_FLBook.h; sourceTree = "<group>"; };
+		ED12B7FC1AE42CC4002F536F /* _FLBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLBook.m; path = Models/_FLBook.m; sourceTree = "<group>"; };
+		ED12B7FD1AE42CC4002F536F /* _FLBookDetailAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLBookDetailAuthor.h; path = Models/_FLBookDetailAuthor.h; sourceTree = "<group>"; };
+		ED12B7FE1AE42CC4002F536F /* _FLBookDetailAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLBookDetailAuthor.m; path = Models/_FLBookDetailAuthor.m; sourceTree = "<group>"; };
+		ED12B7FF1AE42CC4002F536F /* _FLBookDetailTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLBookDetailTag.h; path = Models/_FLBookDetailTag.h; sourceTree = "<group>"; };
+		ED12B8001AE42CC4002F536F /* _FLBookDetailTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLBookDetailTag.m; path = Models/_FLBookDetailTag.m; sourceTree = "<group>"; };
+		ED12B8011AE42CC4002F536F /* _FLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLLocation.h; path = Models/_FLLocation.h; sourceTree = "<group>"; };
+		ED12B8021AE42CC4002F536F /* _FLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLLocation.m; path = Models/_FLLocation.m; sourceTree = "<group>"; };
+		ED12B8031AE42CC4002F536F /* _FLPdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLPdf.h; path = Models/_FLPdf.h; sourceTree = "<group>"; };
+		ED12B8041AE42CC4002F536F /* _FLPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLPdf.m; path = Models/_FLPdf.m; sourceTree = "<group>"; };
+		ED12B8051AE42CC4002F536F /* _FLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLPhoto.h; path = Models/_FLPhoto.h; sourceTree = "<group>"; };
+		ED12B8061AE42CC4002F536F /* _FLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLPhoto.m; path = Models/_FLPhoto.m; sourceTree = "<group>"; };
+		ED12B8071AE42CC4002F536F /* _FLTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _FLTag.h; path = Models/_FLTag.h; sourceTree = "<group>"; };
+		ED12B8081AE42CC4002F536F /* _FLTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _FLTag.m; path = Models/_FLTag.m; sourceTree = "<group>"; };
+		ED12B8121AE42CD2002F536F /* FLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLAnnotation.h; path = Models/FLAnnotation.h; sourceTree = "<group>"; };
+		ED12B8131AE42CD2002F536F /* FLAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAnnotation.m; path = Models/FLAnnotation.m; sourceTree = "<group>"; };
+		ED12B8141AE42CD2002F536F /* FLAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLAuthor.h; path = Models/FLAuthor.h; sourceTree = "<group>"; };
+		ED12B8151AE42CD2002F536F /* FLAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAuthor.m; path = Models/FLAuthor.m; sourceTree = "<group>"; };
+		ED12B8161AE42CD2002F536F /* FLBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLBook.h; path = Models/FLBook.h; sourceTree = "<group>"; };
+		ED12B8171AE42CD2002F536F /* FLBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLBook.m; path = Models/FLBook.m; sourceTree = "<group>"; };
+		ED12B8181AE42CD2002F536F /* FLBookDetailAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLBookDetailAuthor.h; path = Models/FLBookDetailAuthor.h; sourceTree = "<group>"; };
+		ED12B8191AE42CD2002F536F /* FLBookDetailAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLBookDetailAuthor.m; path = Models/FLBookDetailAuthor.m; sourceTree = "<group>"; };
+		ED12B81A1AE42CD2002F536F /* FLBookDetailTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLBookDetailTag.h; path = Models/FLBookDetailTag.h; sourceTree = "<group>"; };
+		ED12B81B1AE42CD2002F536F /* FLBookDetailTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLBookDetailTag.m; path = Models/FLBookDetailTag.m; sourceTree = "<group>"; };
+		ED12B81C1AE42CD2002F536F /* FLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLLocation.h; path = Models/FLLocation.h; sourceTree = "<group>"; };
+		ED12B81D1AE42CD2002F536F /* FLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLLocation.m; path = Models/FLLocation.m; sourceTree = "<group>"; };
+		ED12B81E1AE42CD2002F536F /* FLPdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLPdf.h; path = Models/FLPdf.h; sourceTree = "<group>"; };
+		ED12B81F1AE42CD2002F536F /* FLPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLPdf.m; path = Models/FLPdf.m; sourceTree = "<group>"; };
+		ED12B8201AE42CD2002F536F /* FLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLPhoto.h; path = Models/FLPhoto.h; sourceTree = "<group>"; };
+		ED12B8211AE42CD2002F536F /* FLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLPhoto.m; path = Models/FLPhoto.m; sourceTree = "<group>"; };
+		ED12B8221AE42CD2002F536F /* FLTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLTag.h; path = Models/FLTag.h; sourceTree = "<group>"; };
+		ED12B8231AE42CD2002F536F /* FLTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLTag.m; path = Models/FLTag.m; sourceTree = "<group>"; };
+		ED12B83A1AE42FB7002F536F /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataCollectionViewController.h; path = Models/AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		ED12B83B1AE42FB7002F536F /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataCollectionViewController.m; path = Models/AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
+		ED12B83C1AE42FB7002F536F /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataStack.h; path = Models/AGTCoreDataStack.h; sourceTree = "<group>"; };
+		ED12B83D1AE42FB7002F536F /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataStack.m; path = Models/AGTCoreDataStack.m; sourceTree = "<group>"; };
+		ED12B83E1AE42FB7002F536F /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataTableViewController.h; path = Models/AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		ED12B83F1AE42FB7002F536F /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataTableViewController.m; path = Models/AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		ED12B8401AE42FB7002F536F /* AGTEntityObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTEntityObserver.h; path = Models/AGTEntityObserver.h; sourceTree = "<group>"; };
+		ED12B8411AE42FB7002F536F /* AGTEntityObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTEntityObserver.m; path = Models/AGTEntityObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +154,7 @@
 				ED12B7631AE3FE72002F536F /* Images.xcassets */,
 				ED12B7651AE3FE72002F536F /* LaunchScreen.xib */,
 				ED12B7561AE3FE72002F536F /* Supporting Files */,
+				ED12B7F61AE4245F002F536F /* Settings.h */,
 			);
 			path = HackerBooks;
 			sourceTree = "<group>";
@@ -117,9 +188,71 @@
 		ED12B77C1AE40242002F536F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ED12B82D1AE42F3C002F536F /* Utilities */,
+				ED12B7831AE41E69002F536F /* Machine */,
+				ED12B8121AE42CD2002F536F /* FLAnnotation.h */,
+				ED12B8131AE42CD2002F536F /* FLAnnotation.m */,
+				ED12B8141AE42CD2002F536F /* FLAuthor.h */,
+				ED12B8151AE42CD2002F536F /* FLAuthor.m */,
+				ED12B8161AE42CD2002F536F /* FLBook.h */,
+				ED12B8171AE42CD2002F536F /* FLBook.m */,
+				ED12B8181AE42CD2002F536F /* FLBookDetailAuthor.h */,
+				ED12B8191AE42CD2002F536F /* FLBookDetailAuthor.m */,
+				ED12B81A1AE42CD2002F536F /* FLBookDetailTag.h */,
+				ED12B81B1AE42CD2002F536F /* FLBookDetailTag.m */,
+				ED12B81C1AE42CD2002F536F /* FLLocation.h */,
+				ED12B81D1AE42CD2002F536F /* FLLocation.m */,
+				ED12B81E1AE42CD2002F536F /* FLPdf.h */,
+				ED12B81F1AE42CD2002F536F /* FLPdf.m */,
+				ED12B8201AE42CD2002F536F /* FLPhoto.h */,
+				ED12B8211AE42CD2002F536F /* FLPhoto.m */,
+				ED12B8221AE42CD2002F536F /* FLTag.h */,
+				ED12B8231AE42CD2002F536F /* FLTag.m */,
 				ED12B77D1AE4025D002F536F /* Model.xcdatamodeld */,
+				ED12B7801AE41D20002F536F /* FLHackerBookBaseClass.h */,
+				ED12B7811AE41D20002F536F /* FLHackerBookBaseClass.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		ED12B7831AE41E69002F536F /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				ED12B7F71AE42CC4002F536F /* _FLAnnotation.h */,
+				ED12B7F81AE42CC4002F536F /* _FLAnnotation.m */,
+				ED12B7F91AE42CC4002F536F /* _FLAuthor.h */,
+				ED12B7FA1AE42CC4002F536F /* _FLAuthor.m */,
+				ED12B7FB1AE42CC4002F536F /* _FLBook.h */,
+				ED12B7FC1AE42CC4002F536F /* _FLBook.m */,
+				ED12B7FD1AE42CC4002F536F /* _FLBookDetailAuthor.h */,
+				ED12B7FE1AE42CC4002F536F /* _FLBookDetailAuthor.m */,
+				ED12B7FF1AE42CC4002F536F /* _FLBookDetailTag.h */,
+				ED12B8001AE42CC4002F536F /* _FLBookDetailTag.m */,
+				ED12B8011AE42CC4002F536F /* _FLLocation.h */,
+				ED12B8021AE42CC4002F536F /* _FLLocation.m */,
+				ED12B8031AE42CC4002F536F /* _FLPdf.h */,
+				ED12B8041AE42CC4002F536F /* _FLPdf.m */,
+				ED12B8051AE42CC4002F536F /* _FLPhoto.h */,
+				ED12B8061AE42CC4002F536F /* _FLPhoto.m */,
+				ED12B8071AE42CC4002F536F /* _FLTag.h */,
+				ED12B8081AE42CC4002F536F /* _FLTag.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		ED12B82D1AE42F3C002F536F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ED12B83A1AE42FB7002F536F /* AGTCoreDataCollectionViewController.h */,
+				ED12B83B1AE42FB7002F536F /* AGTCoreDataCollectionViewController.m */,
+				ED12B83C1AE42FB7002F536F /* AGTCoreDataStack.h */,
+				ED12B83D1AE42FB7002F536F /* AGTCoreDataStack.m */,
+				ED12B83E1AE42FB7002F536F /* AGTCoreDataTableViewController.h */,
+				ED12B83F1AE42FB7002F536F /* AGTCoreDataTableViewController.m */,
+				ED12B8401AE42FB7002F536F /* AGTEntityObserver.h */,
+				ED12B8411AE42FB7002F536F /* AGTEntityObserver.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +354,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED12B8261AE42CD2002F536F /* FLBook.m in Sources */,
+				ED12B8291AE42CD2002F536F /* FLLocation.m in Sources */,
+				ED12B8241AE42CD2002F536F /* FLAnnotation.m in Sources */,
+				ED12B80A1AE42CC4002F536F /* _FLAuthor.m in Sources */,
 				ED12B75C1AE3FE72002F536F /* AppDelegate.m in Sources */,
+				ED12B80C1AE42CC4002F536F /* _FLBookDetailAuthor.m in Sources */,
+				ED12B8441AE42FB7002F536F /* AGTCoreDataTableViewController.m in Sources */,
+				ED12B80D1AE42CC4002F536F /* _FLBookDetailTag.m in Sources */,
 				ED12B7591AE3FE72002F536F /* main.m in Sources */,
+				ED12B8451AE42FB7002F536F /* AGTEntityObserver.m in Sources */,
+				ED12B80F1AE42CC4002F536F /* _FLPdf.m in Sources */,
+				ED12B8421AE42FB7002F536F /* AGTCoreDataCollectionViewController.m in Sources */,
+				ED12B7821AE41D20002F536F /* FLHackerBookBaseClass.m in Sources */,
+				ED12B82C1AE42CD2002F536F /* FLTag.m in Sources */,
+				ED12B8251AE42CD2002F536F /* FLAuthor.m in Sources */,
 				ED12B77F1AE4025D002F536F /* Model.xcdatamodeld in Sources */,
+				ED12B8111AE42CC4002F536F /* _FLTag.m in Sources */,
+				ED12B8281AE42CD2002F536F /* FLBookDetailTag.m in Sources */,
+				ED12B82A1AE42CD2002F536F /* FLPdf.m in Sources */,
+				ED12B8101AE42CC4002F536F /* _FLPhoto.m in Sources */,
+				ED12B8431AE42FB7002F536F /* AGTCoreDataStack.m in Sources */,
+				ED12B8091AE42CC4002F536F /* _FLAnnotation.m in Sources */,
+				ED12B80E1AE42CC4002F536F /* _FLLocation.m in Sources */,
+				ED12B80B1AE42CC4002F536F /* _FLBook.m in Sources */,
+				ED12B8271AE42CD2002F536F /* FLBookDetailAuthor.m in Sources */,
+				ED12B82B1AE42CD2002F536F /* FLPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

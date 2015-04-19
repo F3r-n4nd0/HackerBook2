@@ -7,26 +7,102 @@
 //
 
 #import "AppDelegate.h"
+#import "Settings.h"
+#import "FLBook.h"
+#import "AGTCoreDataStack.h"
+
+#define IS_FIRST_RUN @"IS_FIRST_RUN"
+#define IS_LOAD_DATA @"IS_LOAD_DATA"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) AGTCoreDataStack *stack;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    [self initWindows];
     
+    self.stack = [AGTCoreDataStack coreDataStackWithModelName:@"Model"];
+    
+    [self initWindows];
+    [self loadVerifyIsFirstRun];
+    [self loadVerifyIsLoadData];
+    [self downloadJsonDataAndSaveIfNecessary];
     return YES;
 }
-
 
 -(void) initWindows {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
+    
+    UIViewController *vc = [UIViewController new];
+    self.window.rootViewController = vc;
 }
+
+-(void) loadVerifyIsFirstRun {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:IS_FIRST_RUN]){
+        [self setIsFirstRun:FALSE];
+    }else{
+        [self setIsFirstRun:TRUE];
+        [defaults setObject:[NSDate date] forKey:IS_FIRST_RUN];
+        [defaults synchronize];
+    }
+}
+
+-(void) loadVerifyIsLoadData {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:IS_LOAD_DATA]){
+        [self setIsLoadData:TRUE];
+    }else{
+        [self setIsLoadData:FALSE];
+    }
+}
+
+-(void) downloadJsonDataAndSaveIfNecessary {
+    if(self.isFirstRun || !self.isLoadData) {
+        NSURL *urlJsonDataLibary = [NSURL URLWithString:URL_JSON_DATA];
+        [self downloadJsonDataFromURL:urlJsonDataLibary complete:^(NSDictionary *data) {
+            [self saveDataInCoreData:data];
+        }];
+    }
+}
+
+
+- (void) saveDataInCoreData:(NSDictionary*) data{
+    for (id bookDictionary in data) {
+        if([bookDictionary isKindOfClass:[NSDictionary class]]) {
+            [FLBook initWithDictionary:bookDictionary  context:self.stack.context];
+        }
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSDate date] forKey:IS_LOAD_DATA];
+    [defaults synchronize];
+}
+
+- (void)downloadJsonDataFromURL:(NSURL*) url complete:(void(^)(NSDictionary* data)) completeBlock {
+    
+    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url]
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                               if (error) {
+                                   NSLog(@"Error read data from url : %@",error);
+                                   return;
+                               }
+                               NSError* errorParseJson;
+                               id arrayBooks = [NSJSONSerialization JSONObjectWithData:data
+                                                                               options:NSJSONReadingAllowFragments
+                                                                                 error:&errorParseJson];
+                               if(errorParseJson) {
+                                   NSLog(@"Error try to read json data : %@",error);
+                                   return;
+                               }
+                               completeBlock(arrayBooks);
+                           }];
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
