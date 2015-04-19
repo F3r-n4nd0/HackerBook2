@@ -45,18 +45,18 @@
         <relationship name="annotation" maxCount="1" deletionRule="Nullify" destinationEntity="Annotation" inverseName="photo" inverseEntity="Annotation" syncable="YES"/>
     </entity>
     <entity name="Tag" representedClassName="FLTag" syncable="YES">
-        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <relationship name="booksDetails" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BookDetailTag" inverseName="tag" inverseEntity="BookDetailTag" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Book" positionX="-306" positionY="87" width="128" height="163"/>
         <element name="Annotation" positionX="-288" positionY="-171" width="128" height="133"/>
-        <element name="Pdf" positionX="-479" positionY="108" width="128" height="73"/>
-        <element name="Tag" positionX="-513" positionY="297" width="128" height="73"/>
         <element name="Authors" positionX="-54" positionY="294" width="128" height="73"/>
-        <element name="BookDetailTag" positionX="-254" positionY="294" width="128" height="73"/>
+        <element name="Book" positionX="-306" positionY="87" width="128" height="163"/>
         <element name="BookDetailAuthor" positionX="-56" positionY="99" width="128" height="73"/>
-        <element name="Photo" positionX="-11" positionY="-45" width="128" height="73"/>
+        <element name="BookDetailTag" positionX="-254" positionY="294" width="128" height="73"/>
         <element name="Location" positionX="-29" positionY="-204" width="128" height="103"/>
+        <element name="Pdf" positionX="-479" positionY="108" width="128" height="73"/>
+        <element name="Photo" positionX="-11" positionY="-45" width="128" height="73"/>
+        <element name="Tag" positionX="-513" positionY="297" width="128" height="75"/>
     </elements>
 </model>

@@ -1,5 +1,7 @@
 #import "_FLBookDetailAuthor.h"
 
 @interface FLBookDetailAuthor : _FLBookDetailAuthor {}
-// Custom logic goes here.
+
++(instancetype)initWithAuthorName:(NSString*) authorName andBook:(FLBook*) book context:(NSManagedObjectContext *) context;
+
 @end

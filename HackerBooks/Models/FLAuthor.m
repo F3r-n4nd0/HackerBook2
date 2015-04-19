@@ -8,6 +8,10 @@
 
 @implementation FLAuthor
 
-// Custom logic goes here.
++(instancetype)initWithAuthorName:(NSString*) name context:(NSManagedObjectContext *) context {
+    FLAuthor *newAuthor = [FLAuthor insertInManagedObjectContext:context];
+    newAuthor.name = name;
+    return newAuthor;
+}
 
 @end

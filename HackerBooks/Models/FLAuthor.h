@@ -1,5 +1,7 @@
 #import "_FLAuthor.h"
 
 @interface FLAuthor : _FLAuthor {}
-// Custom logic goes here.
+
++(instancetype)initWithAuthorName:(NSString*) name context:(NSManagedObjectContext *) context;
+
 @end

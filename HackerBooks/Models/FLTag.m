@@ -8,6 +8,10 @@
 
 @implementation FLTag
 
-// Custom logic goes here.
++(instancetype)initWithTag:(NSString*) name context:(NSManagedObjectContext *) context {
+    FLTag *newTag = [FLTag insertInManagedObjectContext:context];
+    newTag.name = name;
+    return newTag;
+}
 
 @end

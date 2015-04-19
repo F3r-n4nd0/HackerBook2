@@ -1,5 +1,7 @@
 #import "_FLBookDetailTag.h"
 
 @interface FLBookDetailTag : _FLBookDetailTag {}
-// Custom logic goes here.
+
++(instancetype)initWithTagName:(NSString*) tagName andBook:(FLBook*) book context:(NSManagedObjectContext *) context;
+
 @end
