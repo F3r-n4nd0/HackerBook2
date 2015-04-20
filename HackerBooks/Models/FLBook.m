@@ -35,7 +35,7 @@
             [FLBookDetailAuthor initWithAuthorName:authorName andBook:newBook context:context];
         }
     }
-    
+    newBook.isFavorite = [NSNumber numberWithBool:NO];
     return newBook;
 }
 

@@ -5,6 +5,7 @@
 
 const struct FLTagAttributes FLTagAttributes = {
 	.name = @"name",
+	.sort = @"sort",
 };
 
 const struct FLTagRelationships FLTagRelationships = {
@@ -37,10 +38,36 @@ const struct FLTagRelationships FLTagRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"sortValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"sort"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+
 	return keyPaths;
 }
 
 @dynamic name;
+
+@dynamic sort;
+
+- (int16_t)sortValue {
+	NSNumber *result = [self sort];
+	return [result shortValue];
+}
+
+- (void)setSortValue:(int16_t)value_ {
+	[self setSort:@(value_)];
+}
+
+- (int16_t)primitiveSortValue {
+	NSNumber *result = [self primitiveSort];
+	return [result shortValue];
+}
+
+- (void)setPrimitiveSortValue:(int16_t)value_ {
+	[self setPrimitiveSort:@(value_)];
+}
 
 @dynamic booksDetails;
 

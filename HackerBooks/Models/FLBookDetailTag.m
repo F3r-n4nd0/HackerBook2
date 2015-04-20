@@ -35,4 +35,11 @@
 }
 
 
+-(NSComparisonResult)compareTagWithFavorites:(FLBookDetailTag*) otherDetailTag {
+    if([otherDetailTag.tag.name isEqualToString:@"favorites"]) {
+        return NSOrderedAscending;
+    }
+    return [self.tag.name caseInsensitiveCompare:otherDetailTag.tag.name];
+}
+
 @end

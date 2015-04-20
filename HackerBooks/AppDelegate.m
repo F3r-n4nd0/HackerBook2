@@ -10,6 +10,9 @@
 #import "Settings.h"
 #import "FLBook.h"
 #import "AGTCoreDataStack.h"
+#import "FLBooksTableViewController.h"
+#import "FLBookDetailTag.h"
+#import "FLTag.h"
 
 #define IS_FIRST_RUN @"IS_FIRST_RUN"
 #define IS_LOAD_DATA @"IS_LOAD_DATA"
@@ -29,6 +32,7 @@
     [self loadVerifyIsFirstRun];
     [self loadVerifyIsLoadData];
     [self downloadJsonDataAndSaveIfNecessary];
+    [self loadFirstViewController];
     return YES;
 }
 
@@ -76,6 +80,12 @@
             [FLBook initWithDictionary:bookDictionary  context:self.stack.context];
         }
     }
+    [self.stack saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"Error to save Books in core data : %@",error);
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:nil forKey:IS_LOAD_DATA];
+        [defaults synchronize];
+    }];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[NSDate date] forKey:IS_LOAD_DATA];
     [defaults synchronize];
@@ -101,6 +111,34 @@
                                completeBlock(arrayBooks);
                            }];
     
+}
+
+
+-(void) loadFirstViewController {
+
+    
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[FLBookDetailTag entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor
+                             sortDescriptorWithKey:@"tag.sort"
+                             ascending:NO],
+                            [NSSortDescriptor
+                             sortDescriptorWithKey:@"tag.name"
+                             ascending:YES
+                             selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor
+                             sortDescriptorWithKey:@"book.title"
+                             ascending:YES
+                             selector:@selector(caseInsensitiveCompare:)]
+                            ];
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
+                                      initWithFetchRequest:req
+                                      managedObjectContext:self.stack.context
+                                      sectionNameKeyPath:@"tag.name"
+                                      cacheName:nil];
+    
+    FLBooksTableViewController *booksListViewController = [[FLBooksTableViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:booksListViewController];
+    [self.window setRootViewController:nvc];
 }
 
 

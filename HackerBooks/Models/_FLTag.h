@@ -6,6 +6,7 @@
 
 extern const struct FLTagAttributes {
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *sort;
 } FLTagAttributes;
 
 extern const struct FLTagRelationships {
@@ -27,6 +28,14 @@ extern const struct FLTagRelationships {
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber* sort;
+
+@property (atomic) int16_t sortValue;
+- (int16_t)sortValue;
+- (void)setSortValue:(int16_t)value_;
+
+//- (BOOL)validateSort:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) NSSet *booksDetails;
 
 - (NSMutableSet*)booksDetailsSet;
@@ -45,6 +54,12 @@ extern const struct FLTagRelationships {
 
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
+
+- (NSNumber*)primitiveSort;
+- (void)setPrimitiveSort:(NSNumber*)value;
+
+- (int16_t)primitiveSortValue;
+- (void)setPrimitiveSortValue:(int16_t)value_;
 
 - (NSMutableSet*)primitiveBooksDetails;
 - (void)setPrimitiveBooksDetails:(NSMutableSet*)value;
