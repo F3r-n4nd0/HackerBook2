@@ -5,10 +5,12 @@
 
 const struct FLPhotoAttributes FLPhotoAttributes = {
 	.photoData = @"photoData",
+	.thumbPhotoData = @"thumbPhotoData",
 };
 
 const struct FLPhotoRelationships FLPhotoRelationships = {
 	.annotation = @"annotation",
+	.book = @"book",
 };
 
 @implementation FLPhotoID
@@ -42,7 +44,11 @@ const struct FLPhotoRelationships FLPhotoRelationships = {
 
 @dynamic photoData;
 
+@dynamic thumbPhotoData;
+
 @dynamic annotation;
+
+@dynamic book;
 
 @end
 

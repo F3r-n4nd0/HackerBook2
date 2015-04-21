@@ -21,10 +21,6 @@
 		ED5CB2A61AE457EF0003EF0E /* _FLPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB27D1AE457EF0003EF0E /* _FLPdf.m */; };
 		ED5CB2A71AE457EF0003EF0E /* _FLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB27F1AE457EF0003EF0E /* _FLPhoto.m */; };
 		ED5CB2A81AE457EF0003EF0E /* _FLTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB2811AE457EF0003EF0E /* _FLTag.m */; };
-		ED5CB2A91AE457EF0003EF0E /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB2831AE457EF0003EF0E /* AGTCoreDataCollectionViewController.m */; };
-		ED5CB2AA1AE457EF0003EF0E /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB2851AE457EF0003EF0E /* AGTCoreDataStack.m */; };
-		ED5CB2AB1AE457EF0003EF0E /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB2871AE457EF0003EF0E /* AGTCoreDataTableViewController.m */; };
-		ED5CB2AC1AE457EF0003EF0E /* AGTEntityObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB2891AE457EF0003EF0E /* AGTEntityObserver.m */; };
 		ED5CB2AD1AE457EF0003EF0E /* FLAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB28B1AE457EF0003EF0E /* FLAnnotation.m */; };
 		ED5CB2AE1AE457EF0003EF0E /* FLAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB28D1AE457EF0003EF0E /* FLAuthor.m */; };
 		ED5CB2AF1AE457EF0003EF0E /* FLBook.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB28F1AE457EF0003EF0E /* FLBook.m */; };
@@ -40,6 +36,17 @@
 		ED5CB2CA1AE46C300003EF0E /* FLBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CB2C51AE46C300003EF0E /* FLBookTableViewCell.m */; };
 		ED5CB2CB1AE46C300003EF0E /* FLBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5CB2C61AE46C300003EF0E /* FLBookTableViewCell.xib */; };
 		ED5CB2D01AE46CED0003EF0E /* ebook-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5CB2CF1AE46CED0003EF0E /* ebook-icon.png */; };
+		ED7D4A901AE59CAF0077A8DB /* generic_book_cover_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED7D4A8F1AE59CAF0077A8DB /* generic_book_cover_0.jpg */; };
+		ED7D4A941AE5A0400077A8DB /* FLBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7D4A921AE5A0400077A8DB /* FLBookViewController.m */; };
+		ED7D4A951AE5A0400077A8DB /* FLBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7D4A931AE5A0400077A8DB /* FLBookViewController.xib */; };
+		EDE2E3EB1AE6A66500B81BD6 /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2E3E41AE6A66500B81BD6 /* AGTCoreDataCollectionViewController.m */; };
+		EDE2E3EC1AE6A66500B81BD6 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2E3E61AE6A66500B81BD6 /* AGTCoreDataStack.m */; };
+		EDE2E3ED1AE6A66500B81BD6 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2E3E81AE6A66500B81BD6 /* AGTCoreDataTableViewController.m */; };
+		EDE2E3EE1AE6A66500B81BD6 /* AGTEntityObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2E3EA1AE6A66500B81BD6 /* AGTEntityObserver.m */; };
+		EDE2E3F11AE6A67D00B81BD6 /* AGTAsyncImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2E3F01AE6A67D00B81BD6 /* AGTAsyncImage.m */; };
+		EDE2E3F81AE6E63C00B81BD6 /* FLAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2E3F61AE6E63C00B81BD6 /* FLAnnotationViewController.m */; };
+		EDE2E3F91AE6E63C00B81BD6 /* FLAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE2E3F71AE6E63C00B81BD6 /* FLAnnotationViewController.xib */; };
+		EDE2E3FB1AE6EA0D00B81BD6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE2E3FA1AE6EA0D00B81BD6 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,14 +89,6 @@
 		ED5CB27F1AE457EF0003EF0E /* _FLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FLPhoto.m; sourceTree = "<group>"; };
 		ED5CB2801AE457EF0003EF0E /* _FLTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FLTag.h; sourceTree = "<group>"; };
 		ED5CB2811AE457EF0003EF0E /* _FLTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FLTag.m; sourceTree = "<group>"; };
-		ED5CB2821AE457EF0003EF0E /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
-		ED5CB2831AE457EF0003EF0E /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
-		ED5CB2841AE457EF0003EF0E /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
-		ED5CB2851AE457EF0003EF0E /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
-		ED5CB2861AE457EF0003EF0E /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
-		ED5CB2871AE457EF0003EF0E /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
-		ED5CB2881AE457EF0003EF0E /* AGTEntityObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEntityObserver.h; sourceTree = "<group>"; };
-		ED5CB2891AE457EF0003EF0E /* AGTEntityObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEntityObserver.m; sourceTree = "<group>"; };
 		ED5CB28A1AE457EF0003EF0E /* FLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnnotation.h; sourceTree = "<group>"; };
 		ED5CB28B1AE457EF0003EF0E /* FLAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnnotation.m; sourceTree = "<group>"; };
 		ED5CB28C1AE457EF0003EF0E /* FLAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAuthor.h; sourceTree = "<group>"; };
@@ -117,6 +116,24 @@
 		ED5CB2C51AE46C300003EF0E /* FLBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBookTableViewCell.m; sourceTree = "<group>"; };
 		ED5CB2C61AE46C300003EF0E /* FLBookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLBookTableViewCell.xib; sourceTree = "<group>"; };
 		ED5CB2CF1AE46CED0003EF0E /* ebook-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ebook-icon.png"; sourceTree = "<group>"; };
+		ED7D4A8F1AE59CAF0077A8DB /* generic_book_cover_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = generic_book_cover_0.jpg; sourceTree = "<group>"; };
+		ED7D4A911AE5A0400077A8DB /* FLBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBookViewController.h; sourceTree = "<group>"; };
+		ED7D4A921AE5A0400077A8DB /* FLBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBookViewController.m; sourceTree = "<group>"; };
+		ED7D4A931AE5A0400077A8DB /* FLBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLBookViewController.xib; sourceTree = "<group>"; };
+		EDE2E3E31AE6A66500B81BD6 /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		EDE2E3E41AE6A66500B81BD6 /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
+		EDE2E3E51AE6A66500B81BD6 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		EDE2E3E61AE6A66500B81BD6 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
+		EDE2E3E71AE6A66500B81BD6 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		EDE2E3E81AE6A66500B81BD6 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		EDE2E3E91AE6A66500B81BD6 /* AGTEntityObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEntityObserver.h; sourceTree = "<group>"; };
+		EDE2E3EA1AE6A66500B81BD6 /* AGTEntityObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEntityObserver.m; sourceTree = "<group>"; };
+		EDE2E3EF1AE6A67D00B81BD6 /* AGTAsyncImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTAsyncImage.h; sourceTree = "<group>"; };
+		EDE2E3F01AE6A67D00B81BD6 /* AGTAsyncImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTAsyncImage.m; sourceTree = "<group>"; };
+		EDE2E3F51AE6E63C00B81BD6 /* FLAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnnotationViewController.h; sourceTree = "<group>"; };
+		EDE2E3F61AE6E63C00B81BD6 /* FLAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnnotationViewController.m; sourceTree = "<group>"; };
+		EDE2E3F71AE6E63C00B81BD6 /* FLAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLAnnotationViewController.xib; sourceTree = "<group>"; };
+		EDE2E3FA1AE6EA0D00B81BD6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE2E3FB1AE6EA0D00B81BD6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +158,7 @@
 		ED12B74A1AE3FE72002F536F = {
 			isa = PBXGroup;
 			children = (
+				EDE2E3FA1AE6EA0D00B81BD6 /* MapKit.framework */,
 				ED12B7551AE3FE72002F536F /* HackerBooks */,
 				ED12B76F1AE3FE72002F536F /* HackerBooksTests */,
 				ED12B7541AE3FE72002F536F /* Products */,
@@ -158,6 +177,7 @@
 		ED12B7551AE3FE72002F536F /* HackerBooks */ = {
 			isa = PBXGroup;
 			children = (
+				EDE2E3E21AE6A66500B81BD6 /* Utilities */,
 				ED7D4A861AE58FAB0077A8DB /* Categories */,
 				ED5CB2CE1AE46CE50003EF0E /* Resource */,
 				ED5CB2C31AE46C260003EF0E /* Views */,
@@ -202,8 +222,14 @@
 		ED5CB26E1AE457E30003EF0E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED7D4A911AE5A0400077A8DB /* FLBookViewController.h */,
+				ED7D4A921AE5A0400077A8DB /* FLBookViewController.m */,
+				ED7D4A931AE5A0400077A8DB /* FLBookViewController.xib */,
 				ED5CB2BA1AE458560003EF0E /* FLBooksTableViewController.h */,
 				ED5CB2BB1AE458560003EF0E /* FLBooksTableViewController.m */,
+				EDE2E3F51AE6E63C00B81BD6 /* FLAnnotationViewController.h */,
+				EDE2E3F61AE6E63C00B81BD6 /* FLAnnotationViewController.m */,
+				EDE2E3F71AE6E63C00B81BD6 /* FLAnnotationViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -211,7 +237,6 @@
 		ED5CB26F1AE457EF0003EF0E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ED5CB2B91AE4580A0003EF0E /* Utilities */,
 				ED5CB2B81AE457F60003EF0E /* Machine */,
 				ED5CB28A1AE457EF0003EF0E /* FLAnnotation.h */,
 				ED5CB28B1AE457EF0003EF0E /* FLAnnotation.m */,
@@ -263,21 +288,6 @@
 			name = Machine;
 			sourceTree = "<group>";
 		};
-		ED5CB2B91AE4580A0003EF0E /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				ED5CB2821AE457EF0003EF0E /* AGTCoreDataCollectionViewController.h */,
-				ED5CB2831AE457EF0003EF0E /* AGTCoreDataCollectionViewController.m */,
-				ED5CB2841AE457EF0003EF0E /* AGTCoreDataStack.h */,
-				ED5CB2851AE457EF0003EF0E /* AGTCoreDataStack.m */,
-				ED5CB2861AE457EF0003EF0E /* AGTCoreDataTableViewController.h */,
-				ED5CB2871AE457EF0003EF0E /* AGTCoreDataTableViewController.m */,
-				ED5CB2881AE457EF0003EF0E /* AGTEntityObserver.h */,
-				ED5CB2891AE457EF0003EF0E /* AGTEntityObserver.m */,
-			);
-			name = Utilities;
-			sourceTree = "<group>";
-		};
 		ED5CB2C31AE46C260003EF0E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +301,7 @@
 		ED5CB2CE1AE46CE50003EF0E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				ED7D4A8F1AE59CAF0077A8DB /* generic_book_cover_0.jpg */,
 				ED5CB2CF1AE46CED0003EF0E /* ebook-icon.png */,
 			);
 			path = Resource;
@@ -301,6 +312,23 @@
 			children = (
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		EDE2E3E21AE6A66500B81BD6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EDE2E3EF1AE6A67D00B81BD6 /* AGTAsyncImage.h */,
+				EDE2E3F01AE6A67D00B81BD6 /* AGTAsyncImage.m */,
+				EDE2E3E31AE6A66500B81BD6 /* AGTCoreDataCollectionViewController.h */,
+				EDE2E3E41AE6A66500B81BD6 /* AGTCoreDataCollectionViewController.m */,
+				EDE2E3E51AE6A66500B81BD6 /* AGTCoreDataStack.h */,
+				EDE2E3E61AE6A66500B81BD6 /* AGTCoreDataStack.m */,
+				EDE2E3E71AE6A66500B81BD6 /* AGTCoreDataTableViewController.h */,
+				EDE2E3E81AE6A66500B81BD6 /* AGTCoreDataTableViewController.m */,
+				EDE2E3E91AE6A66500B81BD6 /* AGTEntityObserver.h */,
+				EDE2E3EA1AE6A66500B81BD6 /* AGTEntityObserver.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,9 +412,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5CB2CB1AE46C300003EF0E /* FLBookTableViewCell.xib in Resources */,
+				ED7D4A951AE5A0400077A8DB /* FLBookViewController.xib in Resources */,
 				ED12B7671AE3FE72002F536F /* LaunchScreen.xib in Resources */,
 				ED12B7641AE3FE72002F536F /* Images.xcassets in Resources */,
+				EDE2E3F91AE6E63C00B81BD6 /* FLAnnotationViewController.xib in Resources */,
 				ED5CB2D01AE46CED0003EF0E /* ebook-icon.png in Resources */,
+				ED7D4A901AE59CAF0077A8DB /* generic_book_cover_0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,22 +435,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE2E3EC1AE6A66500B81BD6 /* AGTCoreDataStack.m in Sources */,
 				ED5CB2B61AE457EF0003EF0E /* FLTag.m in Sources */,
+				EDE2E3ED1AE6A66500B81BD6 /* AGTCoreDataTableViewController.m in Sources */,
 				ED5CB2B11AE457EF0003EF0E /* FLBookDetailTag.m in Sources */,
+				EDE2E3EE1AE6A66500B81BD6 /* AGTEntityObserver.m in Sources */,
 				ED5CB2AF1AE457EF0003EF0E /* FLBook.m in Sources */,
 				ED5CB2A81AE457EF0003EF0E /* _FLTag.m in Sources */,
 				ED5CB2A31AE457EF0003EF0E /* _FLBookDetailAuthor.m in Sources */,
-				ED5CB2AB1AE457EF0003EF0E /* AGTCoreDataTableViewController.m in Sources */,
-				ED5CB2AA1AE457EF0003EF0E /* AGTCoreDataStack.m in Sources */,
 				ED5CB2AE1AE457EF0003EF0E /* FLAuthor.m in Sources */,
-				ED5CB2A91AE457EF0003EF0E /* AGTCoreDataCollectionViewController.m in Sources */,
+				ED7D4A941AE5A0400077A8DB /* FLBookViewController.m in Sources */,
 				ED5CB2B51AE457EF0003EF0E /* FLPhoto.m in Sources */,
 				ED5CB2A41AE457EF0003EF0E /* _FLBookDetailTag.m in Sources */,
+				EDE2E3F81AE6E63C00B81BD6 /* FLAnnotationViewController.m in Sources */,
 				ED5CB2B71AE457EF0003EF0E /* Model.xcdatamodeld in Sources */,
 				ED5CB2AD1AE457EF0003EF0E /* FLAnnotation.m in Sources */,
 				ED5CB2B31AE457EF0003EF0E /* FLLocation.m in Sources */,
+				EDE2E3EB1AE6A66500B81BD6 /* AGTCoreDataCollectionViewController.m in Sources */,
 				ED5CB2A51AE457EF0003EF0E /* _FLLocation.m in Sources */,
-				ED5CB2AC1AE457EF0003EF0E /* AGTEntityObserver.m in Sources */,
+				EDE2E3F11AE6A67D00B81BD6 /* AGTAsyncImage.m in Sources */,
 				ED5CB2B41AE457EF0003EF0E /* FLPdf.m in Sources */,
 				ED12B75C1AE3FE72002F536F /* AppDelegate.m in Sources */,
 				ED5CB2A71AE457EF0003EF0E /* _FLPhoto.m in Sources */,

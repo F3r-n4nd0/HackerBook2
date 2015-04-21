@@ -7,16 +7,12 @@
 //
 
 @import UIKit;
-@class AGTBook;
-@class AGTBookViewController;
+@class FLBook;
+@class FLBookViewController;
 
+@interface FLBookViewController : UIViewController <UISplitViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
 
-#import "AGTLibraryTableViewController.h"
-
-
-@interface AGTBookViewController : UIViewController <UISplitViewControllerDelegate, AGTLibraryTableViewControllerDelegate>
-
-@property(strong,nonatomic) AGTBook* book;
+@property(strong,nonatomic) FLBook* book;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewBookCover;
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
@@ -24,10 +20,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTag;
 @property (weak, nonatomic) IBOutlet UISwitch *switchIsFavorite;
 @property (weak, nonatomic) IBOutlet UIButton *buttonDownloadAndView;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewAnnotations;
 
+-(id) initWithBook:(FLBook*) book;
 
--(id) initWithBook:(AGTBook*) book;
-
+- (IBAction)addNewNote:(id)sender;
 
 
 @end

@@ -137,6 +137,7 @@
                                       cacheName:nil];
     
     FLBooksTableViewController *booksListViewController = [[FLBooksTableViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
+    booksListViewController.delegate = booksListViewController;
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:booksListViewController];
     [self.window setRootViewController:nvc];
 }

@@ -5,7 +5,6 @@
 
 const struct FLBookAttributes FLBookAttributes = {
 	.coverURL = @"coverURL",
-	.isFavorite = @"isFavorite",
 	.pdfURL = @"pdfURL",
 	.title = @"title",
 };
@@ -13,6 +12,7 @@ const struct FLBookAttributes FLBookAttributes = {
 const struct FLBookRelationships FLBookRelationships = {
 	.annotations = @"annotations",
 	.authorsDetails = @"authorsDetails",
+	.cover = @"cover",
 	.pdf = @"pdf",
 	.tagsDetails = @"tagsDetails",
 };
@@ -43,36 +43,10 @@ const struct FLBookRelationships FLBookRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
-	if ([key isEqualToString:@"isFavoriteValue"]) {
-		NSSet *affectingKey = [NSSet setWithObject:@"isFavorite"];
-		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
-		return keyPaths;
-	}
-
 	return keyPaths;
 }
 
 @dynamic coverURL;
-
-@dynamic isFavorite;
-
-- (BOOL)isFavoriteValue {
-	NSNumber *result = [self isFavorite];
-	return [result boolValue];
-}
-
-- (void)setIsFavoriteValue:(BOOL)value_ {
-	[self setIsFavorite:@(value_)];
-}
-
-- (BOOL)primitiveIsFavoriteValue {
-	NSNumber *result = [self primitiveIsFavorite];
-	return [result boolValue];
-}
-
-- (void)setPrimitiveIsFavoriteValue:(BOOL)value_ {
-	[self setPrimitiveIsFavorite:@(value_)];
-}
 
 @dynamic pdfURL;
 
@@ -99,6 +73,8 @@ const struct FLBookRelationships FLBookRelationships = {
 	[self didAccessValueForKey:@"authorsDetails"];
 	return result;
 }
+
+@dynamic cover;
 
 @dynamic pdf;
 

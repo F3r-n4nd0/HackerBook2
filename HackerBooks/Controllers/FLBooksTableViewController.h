@@ -7,7 +7,16 @@
 //
 
 #import "AGTCoreDataTableViewController.h"
+@class FLBook;
+@class FLBooksTableViewController;
 
-@interface FLBooksTableViewController : AGTCoreDataTableViewController
+@protocol FLBooksTableViewControllerDelegate <NSObject>
+
+-(void) booksTableViewController:(FLBooksTableViewController*) viewController disSelectBook:(FLBook*) book;
+
+@end
+
+@interface FLBooksTableViewController : AGTCoreDataTableViewController <FLBooksTableViewControllerDelegate>
+@property (weak, nonatomic) id<FLBooksTableViewControllerDelegate> delegate;
 
 @end

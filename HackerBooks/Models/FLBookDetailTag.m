@@ -42,4 +42,9 @@
     return [self.tag.name caseInsensitiveCompare:otherDetailTag.tag.name];
 }
 
+-(NSString*)description {
+    return [NSString stringWithFormat:@"%@ - %@",self.book,self.tag];
+}
+
+
 @end

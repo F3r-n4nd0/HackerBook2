@@ -1,11 +1,12 @@
 #import "FLTag.h"
-@interface FLTag ()
+#import "FLBook.h"
+#import "FLBookDetailTag.h"
 
-// Private interface goes here.
-
-@end
+#define FAVORITE_TAG_NAME @"favorites"
 
 @implementation FLTag
+
+static FLTag *favoriteTag;
 
 +(instancetype)initWithTag:(NSString*) name context:(NSManagedObjectContext *) context {
     FLTag *newTag = [FLTag insertInManagedObjectContext:context];
@@ -13,12 +14,43 @@
     return newTag;
 }
 
--(NSComparisonResult)compareTagWithFavorites:(id) otherObject {
-    FLTag *otherTag = otherObject;
-    if([otherTag.name isEqualToString:@"favorites"]) {
-        return NSOrderedAscending;
++(FLTag*) obtainOrCreateIfNecessaryTagFavorites:(NSManagedObjectContext *) context {
+    
+    if(favoriteTag) {
+        return favoriteTag;
     }
-    return [self.name caseInsensitiveCompare:otherTag.name];
+    NSFetchRequest *req = [NSFetchRequest
+                           fetchRequestWithEntityName:[FLTag entityName]];
+    [req setPredicate:[NSPredicate predicateWithFormat:@"name = %@", FAVORITE_TAG_NAME]];
+    [req setFetchLimit:1];
+    NSError *error;
+    FLTag *tag = [[context executeFetchRequest:req error:&error] firstObject];
+    if(error) {
+        NSLog(@"Error to get tag from name : %@",error);
+        return nil;
+    }
+    if(!tag) {
+        tag =  [FLTag insertInManagedObjectContext:context];
+        tag.name = FAVORITE_TAG_NAME;
+    }
+    tag.sort = [NSNumber numberWithInt:0];
+    favoriteTag = tag;
+    return tag;
 }
+
+-(NSString*)description {
+    return self.name;
+}
+
+
+-(BOOL) containBook:(FLBook*) book {
+    for (FLBookDetailTag *detailBook in self.booksDetails) {
+        if(book == detailBook.book) {
+            return true;
+        }
+    }
+    return NO;
+}
+
 
 @end

@@ -6,7 +6,6 @@
 
 extern const struct FLBookAttributes {
 	__unsafe_unretained NSString *coverURL;
-	__unsafe_unretained NSString *isFavorite;
 	__unsafe_unretained NSString *pdfURL;
 	__unsafe_unretained NSString *title;
 } FLBookAttributes;
@@ -14,12 +13,14 @@ extern const struct FLBookAttributes {
 extern const struct FLBookRelationships {
 	__unsafe_unretained NSString *annotations;
 	__unsafe_unretained NSString *authorsDetails;
+	__unsafe_unretained NSString *cover;
 	__unsafe_unretained NSString *pdf;
 	__unsafe_unretained NSString *tagsDetails;
 } FLBookRelationships;
 
 @class FLAnnotation;
 @class FLBookDetailAuthor;
+@class FLPhoto;
 @class FLPdf;
 @class FLBookDetailTag;
 
@@ -36,14 +37,6 @@ extern const struct FLBookRelationships {
 
 //- (BOOL)validateCoverURL:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) NSNumber* isFavorite;
-
-@property (atomic) BOOL isFavoriteValue;
-- (BOOL)isFavoriteValue;
-- (void)setIsFavoriteValue:(BOOL)value_;
-
-//- (BOOL)validateIsFavorite:(id*)value_ error:(NSError**)error_;
-
 @property (nonatomic, strong) NSString* pdfURL;
 
 //- (BOOL)validatePdfURL:(id*)value_ error:(NSError**)error_;
@@ -59,6 +52,10 @@ extern const struct FLBookRelationships {
 @property (nonatomic, strong) NSSet *authorsDetails;
 
 - (NSMutableSet*)authorsDetailsSet;
+
+@property (nonatomic, strong) FLPhoto *cover;
+
+//- (BOOL)validateCover:(id*)value_ error:(NSError**)error_;
 
 @property (nonatomic, strong) FLPdf *pdf;
 
@@ -99,12 +96,6 @@ extern const struct FLBookRelationships {
 - (NSString*)primitiveCoverURL;
 - (void)setPrimitiveCoverURL:(NSString*)value;
 
-- (NSNumber*)primitiveIsFavorite;
-- (void)setPrimitiveIsFavorite:(NSNumber*)value;
-
-- (BOOL)primitiveIsFavoriteValue;
-- (void)setPrimitiveIsFavoriteValue:(BOOL)value_;
-
 - (NSString*)primitivePdfURL;
 - (void)setPrimitivePdfURL:(NSString*)value;
 
@@ -116,6 +107,9 @@ extern const struct FLBookRelationships {
 
 - (NSMutableSet*)primitiveAuthorsDetails;
 - (void)setPrimitiveAuthorsDetails:(NSMutableSet*)value;
+
+- (FLPhoto*)primitiveCover;
+- (void)setPrimitiveCover:(FLPhoto*)value;
 
 - (FLPdf*)primitivePdf;
 - (void)setPrimitivePdf:(FLPdf*)value;

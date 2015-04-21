@@ -7,3 +7,4 @@
 //
 
 #define URL_JSON_DATA @"https://t.co/K9ziV0z3SJ"
+#define KEY_LAST_BOOK_READ @"LAST_BOOK_READ"

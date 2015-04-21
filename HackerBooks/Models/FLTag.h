@@ -1,9 +1,11 @@
 #import "_FLTag.h"
+@class FLBook;
 
 @interface FLTag : _FLTag {}
 
 +(instancetype)initWithTag:(NSString*) name context:(NSManagedObjectContext *) context;
++(FLTag*) obtainOrCreateIfNecessaryTagFavorites:(NSManagedObjectContext *) context;
 
--(NSComparisonResult)compareTagWithFavorites:(id) otherTag;
+-(BOOL) containBook:(FLBook*) book ;
 
 @end

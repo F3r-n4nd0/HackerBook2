@@ -14,4 +14,9 @@
     return newAuthor;
 }
 
+
+-(NSString*)description {
+    return self.name;
+}
+
 @end
